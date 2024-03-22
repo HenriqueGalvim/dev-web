@@ -1,0 +1,297 @@
+/* Geral */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+}
+
+/*  Define estilos para o corpo do documento, 
+como fonte, cor de fundo e cor do texto padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilos para links. */
+a {
+    text-decoration: none;
+}
+
+/* Estilos para itens de lista. */
+li {
+    list-style: none;
+}
+
+/* Estilos para a barra de navegação, como exibição, 
+alinhamento, preenchimento e cores. */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+}
+
+/* Estilos para os links na barra de navegação */
+.nav-links a {
+    color: #fff;
+}
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+/* Estilos para o menu na barra de navegação. */
+.menu li {
+    padding: 5px 14px;
+}
+
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* NAVBAR MENU RESPONSIVO*/
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display:none;
+        position: absolute;
+        background-color:teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Estilos para o contêiner do conteúdo principal, 
+incluindo preenchimento, espaçamento e largura máxima. */
+.container{
+    display: flex;
+    padding: 2rem 2.5rem;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Estilos específicos para o contêiner de 
+postagens no conteúdo principal. */
+#posts-container{
+    flex: 3 1 2;
+}
+
+/* Estilos para as postagens individuais, 
+incluindo preenchimento, fundo e borda. */
+.post{
+    margin-bottom: 2.5rem;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.post img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para o título, descrição e autor das postagens. */
+.title,
+.description,
+.author{
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.author{
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para a barra lateral, 
+incluindo largura e flexibilidade */
+#sidebar{
+    flex: 1 1 0;
+}
+
+/* Estilos para diferentes elementos da barra lateral, 
+como a caixa de pesquisa, categorias e tags. */
+#search-bar,
+#categories,
+#tags{
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para os títulos desses elementos. */
+#search-bar h4,
+#categories h4,
+#tags h4{
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+/* Estilos para o formulário de pesquisa. */
+#search-bar form{
+    display: flex;
+}
+
+#search-bar input{
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para o botão de envio do formulário de pesquisa. */
+#search-bar input[type="submit"] {
+    cursor: pointer;
+    background-color: #37a1f7;
+    color: #fff;
+    border: none;
+}
+
+#categories li{
+    margin-bottom: 1rem;
+}
+
+/* Estilos para o contêiner de tags. */
+#tags-container{
+    display:  flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#tags-container a{
+    background-color: #4c9e9e;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/* rodapé */
+#footer{
+    background-color: #4c9e9e;
+    border-top: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+#footer h2,
+#footer p{
+    margin-bottom: 1rem;
+}
+
+/* Responsividade Utiliza Media Queries para ajustar a aparência do site 
+em dispositivos com largura de tela igual ou menor que 768px.*/
+
+@media (max-width: 768px) {
+    .container{
+        flex-wrap: wrap;
+    }   
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+}
+
+/* footer ul, footer ul li, footer ul li a, 
+footer p: Estilos específicos para o rodapé, 
+incluindo estilos de lista e links. */
+
+footer {
+    background-color: #eee;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: #4c9e9e;
+    text-decoration: none;
+    width: 10px; /* largura desejada */
+    height: 50px; /* altura desejada */
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.social-icon {
+    width: 35px; /* Largura desejada */
+    height: 25px; /* Altura desejada */
+     border-radius: 40%;  /* Forma arredondada dos icones das redes sociais*/
+}
+
+/* Configurações do rodapé */
+footer {
+    background-color: teal;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alimento Funcional</title>
+    <link rel="stylesheet" href="css/styles2.css" />
+
+  </head>
+
+ 
+
+
+  <body>
+    <div class="container">
+
+      <!-- cabeçalho -->
+      <div class="header">
+
+              <!-- Botão para a página inicial -->
+              <form action="http://127.0.0.1:5500/index.html">
+                  <input type="submit" value="Pagina Inicial" class="btn-submit" />
+              </form>
+              
+
+
+      </div>
+      
+      <!-- Contêiner do formulário -->
+      <div class="form-container">
+
+         <!-- Cabeçalho do formulário -->
+        <div class="form-header">
+          <h3>Cadastro</h3>
+        </div>
+
+         <!-- Corpo do formulário -->
+        <div class="form-body">
+          <h1 class="form-title">Depoimento de Usuários</h1>
+          <p>
+            Olá caro usuário,
+
+            Esperamos que esteja aproveitando a sua experiência em nosso blog! 
+            Sua opinião é extremamente valiosa para nós e gostaríamos de convidá-lo 
+            a compartilhar suas impressões conosco.
+
+
+          </p>
+
+          <!-- Formulário de depoimento -->
+          <form>
+
+             <!-- Campo de entrada para o nome -->
+            <div class="box-input">
+              <label for="title"
+                >Nome Completo <span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="block"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+
+            <!-- Campo de entrada para o e-mail -->
+            <div class="box-input">
+              <label for="price"
+                >E-mail <span class="required-field">*</span></label
+              >
+              <input
+                name="price"
+                id="price"
+                class="block"
+                required
+              />
+            </div>
+
+              <!-- Campo de entrada para o contato -->
+              <div class="box-input">
+                <label for="price"
+                  >Contato <span class="required-field">*</span></label
+                >
+                <input
+                  name="price"
+                  id="price"
+                  class="block"
+                  required
+                />
+              </div>
+
+              <!-- Campo de entrada para o depoimento -->
+              <div class="box-input">
+                <label for="depoimento">Deixe seu depoimento:</label>
+                <textarea name="depoimento" id="depoimento" class="block" rows="4" cols="50"></textarea>
+              </div>
+
+              <!-- Botão de envio do formulário -->
+            <input type="submit" value="Enviar" class="btn-submit" />
+           
+          </form>
+      </div>
+  </body>
+</html>

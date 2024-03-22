@@ -1,0 +1,159 @@
+/* Reset de estilos padrão */
+/* Define margens e preenchimentos iniciais, e escolhe uma fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* Estilo global do corpo */
+  body {
+    background-color: #f0ebf8; /* Define a cor de fundo do corpo */
+  }
+  
+  /* Estilo para títulos */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #333; /* Define a cor dos títulos */
+  }
+  
+  /* Estilo para parágrafos e rótulos */
+  p, label {
+    color: #444; /* Define a cor do texto dos parágrafos e rótulos */
+  }
+  
+  /* Estilo para campos de entrada genéricos */
+  input {
+    border: none; /* Remove a borda padrão */
+    border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior */
+    padding: 10px 0; /* Adiciona preenchimento superior e inferior */
+  }
+
+  /* Estilos específicos para diferentes tipos de entrada */
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="file"],
+  textarea {
+    width: 400px; /* Define a largura padrão para diferentes tipos de entrada */
+  }
+  
+  /* Estilos específicos para áreas de texto */
+  textarea {
+    padding: 10px 5px; /* Adiciona preenchimento às áreas de texto */
+  }
+  
+  /* Estilo do cabeçalho da página */
+  .header {
+    height: 160px; /* Define a altura do cabeçalho */
+    padding: 20px; /* Adiciona preenchimento interno ao cabeçalho */
+    background-color: teal /* Define a cor de fundo do cabeçalho */
+  }
+  
+  /* Estilo do texto dentro do cabeçalho */
+  .header h3 {
+    color: #fff; /* Define a cor do texto dentro do cabeçalho */
+    margin-top: 0; /* Define a margem superior do texto dentro do cabeçalho */
+  }
+
+  
+  
+  /* Container do formulário */
+  .form-container {
+    background-color: #fdfdfd; /* Define a cor de fundo do container do formulário */
+    width: 60%; /* Define a largura do container do formulário */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    position: relative; /* Define a posição relativa para permitir o ajuste do posicionamento de elementos filhos */
+    top: -62px; /* Move o container para cima */
+  }
+  
+  /* Cabeçalho do formulário */
+  .form-header {
+    border-bottom: 1px solid #dfdfdf; /* Adiciona uma borda inferior ao cabeçalho do formulário */
+    height: 45px; /* Define a altura do cabeçalho do formulário */
+  }
+  
+  /* Estilo do título dentro do cabeçalho do formulário */
+  .form-header{
+    color: #4c9e9e; /* Define a cor do título do cabeçalho do formulário */
+    border-bottom: 2px solid #4c9e9e; /* Adiciona uma borda inferior mais forte */
+    width: 100px; /* Define a largura do título do cabeçalho */
+    text-align: center; /* Centraliza o texto do título */
+    margin: 0 auto; /* Centraliza o título horizontalmente */
+    text-transform: uppercase; /* Transforma o texto do título em maiúsculas */
+    height: 45px; /* Define a altura do título */
+    line-height: 45px; /* Define a altura da linha do título */
+  }
+  
+  /* Corpo do formulário */
+  .form-body {
+    padding: 30px; /* Adiciona preenchimento interno ao corpo do formulário */
+  }
+  
+  /* Estilo do título do formulário */
+  .form-title {
+    margin-bottom: 15px; /* Define a margem inferior do título do formulário */
+  }
+  
+  /* Parágrafos dentro do corpo do formulário */
+  .form-body p {
+    margin-bottom: 20px; /* Define a margem inferior dos parágrafos dentro do formulário */
+  }
+  
+  /* Estilo para campos obrigatórios */
+  .required-field {
+    color: #d80835; /* Define a cor para indicar campos obrigatórios */
+  }
+  
+  /* Estilo para caixas de entrada */
+  .box-input {
+    margin-bottom: 35px; /* Define a margem inferior para caixas de entrada */
+  }
+  
+  /* Estilo para elementos de bloco */
+  .block {
+    display: block; /* Define elementos como blocos */
+  }
+  
+  /* Estilo para caixas opcionais */
+  .optional-box {
+    display: inline-block; /* Define as caixas opcionais como elementos em linha */
+    margin: 0 30px 30px 0; /* Define as margens das caixas opcionais */
+  }
+  
+  /* Lista de elementos opcionais */
+  .optional-list li {
+    list-style: none; /* Remove os marcadores de lista */
+    margin-bottom: 5px; /* Define a margem inferior para itens da lista */
+  }
+  
+  /* Parágrafos dentro de caixas de entrada */
+  .box-input p {
+    margin-bottom: 15px; /* Define a margem inferior para parágrafos dentro de caixas de entrada */
+  }
+  
+  /* Estilo para o botão de envio do formulário */
+  .btn-submit {
+    background-color: #4c9e9e; /* Define a cor de fundo do botão de envio */
+    color: #fff; /* Define a cor do texto do botão de envio */
+    border: 2px solid transparent; /* Adiciona uma borda transparente ao botão */
+    width: 150px; /* Define a largura do botão de envio */
+    height: 50px; /* Define a altura do botão de envio */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    text-transform: uppercase; /* Transforma o texto do botão em maiúsculas */
+    transition: 0.5s; /* Adiciona uma transição suave ao hover */
+  }
+  
+  /* Estilo para o botão de envio do formulário quando hover */
+  .btn-submit:hover {
+    background-color: #fff; /* Altera a cor de fundo do botão para branco */
+    border-color: #4c9e9e; /* Altera a cor da borda para a cor principal */
+    color: #4c9e9e; /* Altera a cor do texto para a cor principal */
+  }
+
+  
+    
+
+  
