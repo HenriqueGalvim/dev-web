@@ -107,7 +107,6 @@ input[type=checkbox]{
 incluindo preenchimento, espaçamento e largura máxima. */
 .container{
     display: flex;
-    padding: 2rem 2.5rem;
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -224,7 +223,9 @@ como a caixa de pesquisa, categorias e tags. */
 #footer p{
     margin-bottom: 1rem;
 }
-
+textarea{
+    width: 300px;
+}
 /* Responsividade Utiliza Media Queries para ajustar a aparência do site 
 em dispositivos com largura de tela igual ou menor que 768px.*/
 
